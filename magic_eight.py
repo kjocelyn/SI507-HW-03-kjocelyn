@@ -2,10 +2,17 @@
 
 user_input = input("What is your question? ")
 
-for response in user_input[-1]:
-    if user_input == "?":
-        pass
-    elif user_input == "quit":
+while True:
+    if user_input[-1] == "?":
+        print("answers") #change "answer" according to the right code when merging
+        user_input = input("What is your question? ")
+    if user_input == "quit":
         break
     else:
         print("I'm sorry, I can only answer questions")
+        user_input = input("What is your question? ")
+          
+
+   
+    
+
