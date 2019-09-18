@@ -14,9 +14,9 @@ answers=[" Yes - definitely.","It is certain", "It is decidedly so","Without a d
 
 while True:
     if user_input[-1] == "?":
-        print(random.choice(answers)) #change "answer" according to the right code when merging
+        print(random.choice(answers)) 
         user_input = input("What is your question? ")
-    if user_input == "quit":
+    elif user_input == "quit":
         break
     else:
         print("I'm sorry, I can only answer questions")
